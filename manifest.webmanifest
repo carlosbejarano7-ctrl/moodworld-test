@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "MoodWorld",
+  "short_name": "MoodWorld",
+  "description": "Ta météo émotionnelle personnelle",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#21102e",
+  "theme_color": "#392447",
+  "icons": [
+    {
+      "src": "./moodworld-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./moodworld-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
