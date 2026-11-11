@@ -8,10 +8,262 @@
 
 /* Local history safety tools */
 .mw-backup{margin-top:24px;border:1px solid #dce6dd;border-radius:13px;padding:15px;background:#f8faf8}.mw-backup h2{font-size:16px;margin:0 0 8px}.mw-backup p{margin:6px 0 12px}.mw-backup-actions{display:flex;gap:8px;flex-wrap:wrap}.mw-backup-actions button{flex:1;min-width:125px}.mw-backup-status{font-size:12px;color:#52695c;margin-top:10px;line-height:1.4}
+
+/* MOODWORLD V3 — ELECTRIC NIGHT / visual-only experimental skin */
+:root{color-scheme:dark;--ink:#f9f8ff;--muted:#c4c1e3;--line:rgba(255,255,255,.16);--glass:rgba(255,255,255,.075);--electric:#6ce8fa;--pink:#ff4eac;--yellow:#ffcb58}
+html{background:#090d2e}body{background:#090d2e;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+main{position:relative;isolation:isolate;background:radial-gradient(ellipse 80% 30% at 100% 0%,rgba(0,213,255,.26),transparent 78%),radial-gradient(ellipse 80% 30% at 0% 14%,rgba(206,37,255,.25),transparent 78%),linear-gradient(160deg,#111a55 0%,#151042 49%,#090d2e 100%);box-shadow:0 0 80px #0006;overflow:hidden}
+main:before{content:"";position:absolute;z-index:-1;top:80px;right:-100px;width:270px;height:270px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#6df2ff 0%,#426cfb 34%,#ba32e7 60%,transparent 72%);filter:blur(24px);opacity:.38;pointer-events:none}
+.top{padding:23px 20px 15px;border:0;align-items:center}.brand{font-size:27px;letter-spacing:-1.4px;font-weight:850;color:white}.brand:before{content:'◕';display:inline-grid;place-items:center;margin-right:9px;width:37px;height:37px;border-radius:14px;background:linear-gradient(135deg,#1de9ed,#a83bf5 52%,#ff568d 80%,#ffbf4b);font-size:25px;color:#fff;box-shadow:0 6px 22px #c747e677}.brand i{color:#ffb84e}.sub{color:#b9b9e5;letter-spacing:1.6px;font-weight:700}
+.langbar{gap:4px}.langbar button{background:#ffffff0c;color:#d7d6ef;border:1px solid var(--line);border-radius:9px;padding:7px}.langbar button.active{background:linear-gradient(120deg,#ff529e,#7657fa);border-color:transparent;color:#fff}
+.page{padding:26px 20px 36px}h1{font-size:32px;font-weight:800;letter-spacing:-1.1px;line-height:1.15;color:white}p,.note,.muted{color:var(--muted)}p{line-height:1.6}.center h1{font-size:clamp(30px,8vw,39px);margin:18px 0 10px}.center>p{font-size:15px}.center h1:before{content:'✦';display:block;margin:0 auto 20px;width:82px;height:82px;line-height:82px;border-radius:30px;background:radial-gradient(circle at 25% 25%,#fff5a7,#ffcb4b 30%,#ff4da8 65%,#803cf7);color:#fff;font-size:43px;transform:rotate(-9deg);box-shadow:0 0 45px #ff5ba066,0 16px 30px #0004}
+.prototype-notice{background:#ffffff0a;color:#b9b9dc;border:1px solid var(--line);border-radius:13px;font-size:11px;padding:10px 13px;margin-top:8px}
+.moods{gap:7px;margin:28px 0 22px}.mood{padding:12px 2px 10px;background:linear-gradient(155deg,#ffffff1f,#ffffff09);border:1px solid #ffffff28;border-radius:18px;box-shadow:0 10px 18px #0002;transition:transform .2s,box-shadow .2s,border-color .2s}.mood svg{max-width:52px;height:51px;filter:drop-shadow(0 3px 7px #0004)}.mood svg circle{fill:rgba(255,255,255,.12);stroke-width:3.4}.mood[data-mood="1"]{background:linear-gradient(150deg,#9b48ea66,#5531a766)}.mood[data-mood="2"]{background:linear-gradient(150deg,#4a7df766,#2054b966)}.mood[data-mood="3"]{background:linear-gradient(150deg,#e3a34466,#ab6a2766)}.mood[data-mood="4"]{background:linear-gradient(150deg,#ffa33d77,#fa4e8466)}.mood[data-mood="5"]{background:linear-gradient(150deg,#ffbd3977,#f72eae66)}.mood small{font-size:10px;color:#fff;line-height:1.2;font-weight:600}.mood.active{border-color:#fff;transform:translateY(-5px);box-shadow:0 0 0 2px #ffffff44,0 0 25px #ff5bc788}
+.primary{background:linear-gradient(100deg,#ffbd50,#ff5c89 43%,#d72fe6 78%,#7d6cfa);color:#fff;font-size:15px;font-weight:800;border-radius:17px;min-height:55px;box-shadow:0 12px 28px #fc3b9b44}.primary:disabled{opacity:.45;box-shadow:none}.secondary{background:#ffffff12;border:1px solid #ffffff33;color:#f9f8ff;border-radius:12px}.link{color:#84e9ff;font-weight:700}.country-select,.mw-daypicker select{background:#1a2051;color:#fff;border:1px solid #ffffff44;border-radius:13px}.participation-label{color:#e4e2ff;font-weight:650}.mw-daypicker,.panel,.mw-extra,.mw-backup,.territory-card{background:var(--glass);border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 30px #0002}.mw-daypicker label,.mw-tiny,.mw-backup-status{color:#d1cfee}.mw-extra h2,.mw-backup h2{color:#fff}.mw-progress{background:#ffffff20}.mw-progress span{background:linear-gradient(90deg,#26d9ef,#a351fa,#ff559d)}
+.nav{background:rgba(16,17,56,.96);border-top:1px solid #ffffff24;backdrop-filter:blur(20px);padding:9px 8px max(10px,env(safe-area-inset-bottom));gap:6px}.nav button{background:transparent;color:#bbb8dc;border-radius:13px;font-weight:600;padding:9px 2px}.nav button.active{background:linear-gradient(130deg,#fa4eae55,#7456f855);color:#fff}.nav b{font-size:24px}
+.tabs{gap:8px}.tabs button{background:#ffffff0b;border:1px solid var(--line);color:#e1def4;border-radius:12px}.tabs button.active{background:linear-gradient(100deg,#e747b2,#6a65f4);color:white;border-color:transparent}.day{background:#ffffff16;color:#fff;border-radius:10px}.day.today{outline-color:#76e9ff}.weekday{color:#c3c1de}.legend>div{color:#c5c2e0}.datehead strong{color:#fff}.swatch{height:11px}.chart text{fill:#e3dff4}.map{border:1px solid #ffffff2d;background:#171d53;border-radius:20px}.map #realmap{background:#131b51}.map figcaption,.maploading{color:#d2cfea}.maptools button{background:#20275c;color:#fff;border-color:#ffffff33}.mapnote{background:#191f55ed;color:#fff}.maperror{color:#e0dcef}.map #realmap path{stroke:#2a2a64}.territory-row,.territory-dominant{color:#e0def5}.territory-track{background:#ffffff22}.stat strong{font-size:32px;color:#7aeaff}.bar{height:20px;border-radius:12px}.sharecard{background:linear-gradient(140deg,#7139c855,#f546a433);border:1px solid var(--line);border-radius:22px}.sharecard strong{color:#8deeff}.pending{border-left:3px solid #b76bff}.colorword{color:#7be9f9}
+button:focus-visible,select:focus-visible{outline:3px solid #7aeaff;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.mood{transition:none}}
+@media(max-width:370px){.page{padding-left:14px;padding-right:14px}.moods{gap:4px}.mood small{font-size:9px}.brand{font-size:23px}}
+
+/* V3.2 — CIEL EN MOUVEMENT : orage lointain à gauche, éclaircie à droite.
+   Uniquement l'accueil : les autres pages gardent le design Electric Night. */
+body:has(#home:not(.hidden)){background:#101737}
+body:has(#home:not(.hidden)) main{
+ position:relative;isolation:isolate;
+ background:
+  radial-gradient(ellipse 82% 40% at 108% 18%,rgba(255,221,150,.85) 0%,rgba(255,169,156,.49) 28%,rgba(255,163,190,.12) 64%,transparent 84%),
+  radial-gradient(ellipse 92% 45% at 97% 38%,rgba(126,215,252,.53),rgba(83,146,235,.16) 62%,transparent 85%),
+  radial-gradient(ellipse 83% 47% at -15% 18%,rgba(17,22,55,.98),rgba(39,41,91,.81) 53%,transparent 90%),
+  radial-gradient(ellipse 85% 34% at 15% 61%,rgba(60,49,113,.72),transparent 83%),
+  linear-gradient(113deg,#10162f 0%,#30345f 35%,#5c659d 64%,#8bb9df 86%,#e9b4a8 100%);
+}
+body:has(#home:not(.hidden)) main:before{
+ content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+ background:
+  radial-gradient(ellipse 67% 13% at 8% 10%,rgba(13,18,44,.85) 3%,rgba(31,35,74,.57) 51%,transparent 86%),
+  radial-gradient(ellipse 69% 13% at 25% 24%,rgba(31,31,69,.62) 0%,rgba(66,59,109,.34) 52%,transparent 88%),
+  radial-gradient(ellipse 73% 12% at 80% 12%,rgba(255,233,210,.22) 0%,transparent 84%),
+  radial-gradient(ellipse 80% 17% at 8% 44%,rgba(28,32,75,.39),transparent 86%);
+ filter:blur(16px);opacity:1;
+}
+body:has(#home:not(.hidden)) main:after{
+ content:'';position:absolute;top:0;right:0;width:52%;height:54%;pointer-events:none;z-index:-1;
+ background:radial-gradient(ellipse at 100% 20%,rgba(255,246,211,.34),transparent 70%);
+}
+body:has(#home:not(.hidden)) .top{background:rgba(13,20,53,.09)}
+body:has(#home:not(.hidden)) .prototype-notice{background:rgba(14,22,59,.24);border-color:rgba(255,255,255,.19);color:#f4eefa;backdrop-filter:blur(12px)}
+#home .center h1{font-size:clamp(31px,8vw,39px);color:#fff;text-shadow:0 3px 22px #1118327a}
+#home .center h1:before{
+ background:radial-gradient(circle at 30% 27%,#fff8d8 0%,#ffdd8b 24%,#ff9c83 48%,#e65a9e 70%,#7c62d8 100%);
+ box-shadow:0 0 40px rgba(255,193,137,.30),0 16px 36px #151b4d70;
+}
+#home .center>p{color:#f5e9f5;text-shadow:0 2px 10px #151b4d88}
+#home .moods{gap:7px;margin:29px 0 24px}
+#home .mood{position:relative;overflow:hidden;border:1px solid #ffffff65;border-radius:19px;box-shadow:0 12px 25px #0c14384d,inset 0 1px 1px #ffffff45;transition:transform .2s,box-shadow .2s}
+#home .mood:before{content:'';position:absolute;inset:0 0 62%;background:linear-gradient(#ffffff3d,transparent);pointer-events:none}
+#home .mood svg{position:relative;max-width:52px;height:51px;filter:drop-shadow(0 3px 5px #14163155)}
+#home .mood svg circle{fill:#ffffff1c;stroke-width:3.7}
+#home .mood svg path{stroke-width:3.8}
+#home .mood[data-mood="1"]{background:linear-gradient(155deg,#ad6ddc,#6b3b9d 66%,#3e286f)}
+#home .mood[data-mood="1"] svg circle,#home .mood[data-mood="1"] svg path{stroke:#fff0ff}
+#home .mood[data-mood="2"]{background:linear-gradient(155deg,#78c1f8,#3475cf 63%,#234b98)}
+#home .mood[data-mood="2"] svg circle,#home .mood[data-mood="2"] svg path{stroke:#f2fbff}
+#home .mood[data-mood="3"]{background:linear-gradient(155deg,#f7d68c,#dca44e 62%,#ae713b)}
+#home .mood[data-mood="3"] svg circle,#home .mood[data-mood="3"] svg path{stroke:#493044}
+#home .mood[data-mood="4"]{background:linear-gradient(155deg,#91e5c7,#35b8a7 58%,#198e91)}
+#home .mood[data-mood="4"] svg circle,#home .mood[data-mood="4"] svg path{stroke:#104e62}
+#home .mood[data-mood="5"]{background:linear-gradient(155deg,#ffe69b,#ffad6d 48%,#ed6e8b)}
+#home .mood[data-mood="5"] svg circle,#home .mood[data-mood="5"] svg path{stroke:#8e3059}
+#home .mood small{position:relative;color:white;font-size:10px;font-weight:750;text-shadow:0 2px 6px #1520438c}
+#home .mood[data-mood="3"] small,#home .mood[data-mood="4"] small,#home .mood[data-mood="5"] small{color:#2d2848;text-shadow:none}
+#home .mood.active{border:2px solid white;transform:translateY(-5px);box-shadow:0 0 0 3px #ffffff45,0 15px 33px #1117357a}
+#home .mw-daypicker{background:rgba(15,24,61,.30);border-color:#ffffff4d;backdrop-filter:blur(12px)}
+#home .mw-daypicker label,#home .mw-tiny,#home .note,#home .muted{color:#f2ebf9}
+#home .country-select,#home .mw-daypicker select{background:#222b57;color:#fff;border-color:#ffffff66}
+#home .participation-label{color:#fff}
+body:has(#home:not(.hidden)) .nav{background:rgba(15,21,52,.91)}
+@media(max-width:370px){#home .moods{gap:4px}#home .mood small{font-size:9px}}
+
+
+/* V3.3 — ciel net, contraste renforcé, signature discrète. Accueil seulement. */
+body:has(#home:not(.hidden)) main{
+ background:
+  radial-gradient(ellipse 62% 43% at 112% 25%,rgba(255,224,161,.82) 0%,rgba(255,181,157,.38) 44%,transparent 78%),
+  radial-gradient(ellipse 75% 50% at 102% 56%,rgba(94,189,242,.43),transparent 76%),
+  linear-gradient(116deg,#0a112b 0%,#151d42 25%,#323d70 49%,#667fb2 73%,#c3c9d9 91%,#f4d7b7 100%);
+}
+body:has(#home:not(.hidden)) main:before{
+ background:
+  radial-gradient(ellipse 74% 16% at 0% 16%,#0b1129 0%,#172043 47%,transparent 80%),
+  radial-gradient(ellipse 64% 13% at 15% 31%,rgba(22,29,64,.84) 0%,rgba(37,45,85,.5) 52%,transparent 85%),
+  radial-gradient(ellipse 60% 10% at 38% 11%,rgba(32,40,83,.55),transparent 80%);
+ filter:none;opacity:1;
+}
+body:has(#home:not(.hidden)) main:after{
+ background:radial-gradient(ellipse at 100% 14%,rgba(255,244,208,.38),transparent 72%);
+}
+/* Le symbole de marque ne doit plus concurrencer le contenu. */
+body:has(#home:not(.hidden)) .brand{font-size:20px;letter-spacing:-.75px;font-weight:760}
+body:has(#home:not(.hidden)) .brand:before{
+ content:'◕';width:22px;height:22px;margin-right:6px;border-radius:8px;
+ font-size:14px;box-shadow:none;background:linear-gradient(135deg,#6ce4f4,#ab75f7 58%,#ffaf91);
+}
+#home .center h1:before{
+ content:'✦';width:44px;height:44px;line-height:44px;margin:0 auto 14px;
+ border-radius:16px;font-size:23px;transform:rotate(-7deg);
+ background:linear-gradient(135deg,#ffe4a0,#ff9c89 48%,#a66fe8);
+ box-shadow:0 7px 22px rgba(10,18,48,.24);
+}
+#home .center h1{margin-top:10px;text-shadow:0 2px 12px rgba(5,11,35,.38)}
+#home .mood{box-shadow:0 10px 22px rgba(9,17,48,.35);}
+#home .mood svg{filter:none}
+#home .mw-daypicker,body:has(#home:not(.hidden)) .prototype-notice{backdrop-filter:none}
+@media(max-width:370px){body:has(#home:not(.hidden)) .brand{font-size:18px}}
+/* V3.4 — daylight after the storm: saturated, glossy, sharply defined. Home only. */
+body:has(#home:not(.hidden)){background:#4779aa}
+body:has(#home:not(.hidden)) main{
+ background:
+ radial-gradient(ellipse 57% 34% at 105% 14%,rgba(255,251,211,.98) 0%,rgba(255,209,133,.72) 30%,transparent 77%),
+ radial-gradient(ellipse 72% 45% at 110% 42%,rgba(70,212,255,.78) 0%,rgba(72,180,248,.35) 62%,transparent 90%),
+ linear-gradient(117deg,#34456f 0%,#4b6596 24%,#648ec0 46%,#65b8e6 67%,#a4e6f5 84%,#ffe4a6 100%);
+}
+body:has(#home:not(.hidden)) main:before{
+ background:
+ radial-gradient(ellipse 74% 12% at -10% 13%,rgba(39,50,84,.87) 0%,rgba(53,67,108,.80) 54%,transparent 86%),
+ radial-gradient(ellipse 71% 12% at 6% 29%,rgba(48,65,105,.68) 0%,rgba(70,88,132,.48) 58%,transparent 89%),
+ radial-gradient(ellipse 59% 8% at 25% 43%,rgba(70,93,143,.40) 0%,transparent 90%);
+ filter:none;opacity:1;
+}
+body:has(#home:not(.hidden)) main:after{
+ background:radial-gradient(ellipse at 100% 8%,rgba(255,255,234,.78),rgba(255,231,177,.27) 45%,transparent 74%);
+}
+body:has(#home:not(.hidden)) .top{background:rgba(31,60,105,.13);border-bottom-color:#ffffff4a}
+body:has(#home:not(.hidden)) .brand{font-size:21px;color:white;text-shadow:0 2px 8px #24436c66}
+body:has(#home:not(.hidden)) .brand:before{content:none;display:none}
+#home .center h1:before{content:none;display:none}
+#home .center h1{margin-top:20px;color:#fff;text-shadow:0 3px 13px #203f70a8}
+#home .center>p{color:#fff;text-shadow:0 2px 8px #274a70a0}
+body:has(#home:not(.hidden)) .prototype-notice{background:rgba(38,72,118,.48);border-color:#ffffff65;color:#fff}
+#home .mood{border-color:#ffffffc7;box-shadow:0 9px 18px #173e7152,inset 0 2px 3px #ffffffa0}
+#home .mood:before{background:linear-gradient(180deg,#ffffff80,transparent)}
+#home .mood[data-mood="1"]{background:linear-gradient(155deg,#e48bdb,#b649a7 56%,#7c318c)}
+#home .mood[data-mood="2"]{background:linear-gradient(155deg,#94caff,#3b90e8 56%,#2365b9)}
+#home .mood[data-mood="3"]{background:linear-gradient(155deg,#ffe69a,#f4bd46 56%,#d78c2b)}
+#home .mood[data-mood="4"]{background:linear-gradient(155deg,#a1f5c3,#42d7aa 56%,#0d9e9b)}
+#home .mood[data-mood="5"]{background:linear-gradient(155deg,#fff0a1,#ffad59 48%,#ff568c)}
+#home .mood svg{filter:drop-shadow(0 2px 2px #17355744)}
+#home .mw-daypicker{background:rgba(33,75,129,.40);border-color:#ffffff7d}
+#home .country-select,#home .mw-daypicker select{background:#315d91;border-color:#ffffff88}
+body:has(#home:not(.hidden)) .nav{background:rgba(32,56,100,.93)}
+
+
+/* V3.5 — IRIS MAUVE : retour à l'identité émotionnelle. Accueil uniquement. */
+body:has(#home:not(.hidden)){background:#6a4c98}
+body:has(#home:not(.hidden)) main{
+ background:
+ radial-gradient(ellipse 64% 38% at 106% 13%,rgba(255,244,212,.94) 0%,rgba(255,204,196,.73) 35%,rgba(255,180,220,.12) 72%,transparent 86%),
+ radial-gradient(ellipse 78% 48% at 108% 42%,rgba(255,160,217,.60),rgba(216,147,234,.26) 60%,transparent 88%),
+ radial-gradient(ellipse 76% 42% at -15% 13%,rgba(68,38,112,.82),rgba(105,64,155,.38) 63%,transparent 88%),
+ linear-gradient(115deg,#55337e 0%,#7750a4 27%,#a06ac2 49%,#d49ad7 72%,#f7c9d7 88%,#ffe7cb 100%);
+}
+body:has(#home:not(.hidden)) main:before{
+ background:
+ radial-gradient(ellipse 82% 13% at -10% 15%,rgba(60,32,103,.70),rgba(97,53,145,.35) 57%,transparent 88%),
+ radial-gradient(ellipse 68% 11% at 5% 31%,rgba(89,47,140,.44),transparent 85%),
+ radial-gradient(ellipse 58% 10% at 28% 8%,rgba(130,74,174,.25),transparent 85%);
+ filter:none;opacity:1;
+}
+body:has(#home:not(.hidden)) main:after{
+ background:radial-gradient(ellipse at 100% 12%,rgba(255,247,226,.60),rgba(255,209,226,.15) 52%,transparent 76%);
+}
+body:has(#home:not(.hidden)) .top{background:rgba(90,45,129,.11);border-bottom-color:#ffffff55}
+body:has(#home:not(.hidden)) .brand{font-size:20px;color:white;text-shadow:0 2px 9px #4d277b66}
+body:has(#home:not(.hidden)) .brand:before,#home .center h1:before{content:none;display:none}
+#home .center h1{margin-top:14px;color:#fff;text-shadow:0 2px 13px #4d2b6b7a}
+#home .center>p{color:#fff5ff;text-shadow:0 2px 8px #4d2b6b77}
+body:has(#home:not(.hidden)) .prototype-notice{background:rgba(85,48,130,.29);border:1px solid #ffffff70;color:white;backdrop-filter:none}
+#home .mood{border-color:#ffffffba;box-shadow:0 9px 20px #55337842,inset 0 2px 3px #ffffffa0}
+#home .mood:before{background:linear-gradient(180deg,#ffffff66,transparent)}
+#home .mood[data-mood="1"]{background:linear-gradient(150deg,#d68bdf,#9d4db9 58%,#66318c)}
+#home .mood[data-mood="2"]{background:linear-gradient(150deg,#c49bec,#8b70d8 58%,#574db1)}
+#home .mood[data-mood="3"]{background:linear-gradient(150deg,#ffe9b0,#e8b96d 58%,#bc8856)}
+#home .mood[data-mood="4"]{background:linear-gradient(150deg,#a6f0d9,#4ccab5 58%,#218e9e)}
+#home .mood[data-mood="5"]{background:linear-gradient(150deg,#ffe2ad,#ff9ab4 54%,#e65d9d)}
+#home .mood svg{filter:drop-shadow(0 2px 3px #46276745)}
+#home .mood[data-mood="1"] svg circle,#home .mood[data-mood="1"] svg path,
+#home .mood[data-mood="2"] svg circle,#home .mood[data-mood="2"] svg path{stroke:#fff}
+#home .mood[data-mood="3"] svg circle,#home .mood[data-mood="3"] svg path{stroke:#694b5c}
+#home .mood[data-mood="4"] svg circle,#home .mood[data-mood="4"] svg path{stroke:#164f66}
+#home .mood[data-mood="5"] svg circle,#home .mood[data-mood="5"] svg path{stroke:#843b6c}
+#home .mood.active{border:2px solid white;box-shadow:0 0 0 3px #fff7,0 13px 30px #5a337c75}
+#home .mw-daypicker{background:rgba(91,52,141,.26);backdrop-filter:none;border-color:#ffffff6b}
+#home .country-select,#home .mw-daypicker select{background:#65488d;color:#fff;border-color:#ffffff85}
+body:has(#home:not(.hidden)) .nav{background:rgba(56,33,91,.93)}
+
+/* V3.6 — signature émotionnelle discrète, sans toucher au paysage Iris Mauve. */
+body:has(#home:not(.hidden)) .brand{display:flex;align-items:center;gap:8px}
+body:has(#home:not(.hidden)) .brand:before{
+ content:'◕';display:grid;place-items:center;flex:none;
+ width:25px;height:25px;margin:0;border-radius:9px;
+ background:linear-gradient(135deg,#f5b5ec 0%,#b878df 43%,#7857bd 75%,#f9c7ac 100%);
+ color:#fff9fc;font-size:18px;line-height:1;
+ box-shadow:0 2px 9px rgba(73,32,112,.23),inset 0 1px 1px rgba(255,255,255,.48);
+ text-shadow:0 1px 2px rgba(73,32,112,.18);
+}
+
+/* V3.7 — Le parcours personnel partage Iris Mauve ; Monde et Partager restent Electric Night. */
+body:has(#personal:not(.hidden)),body:has(#confirm:not(.hidden)),body:has(#receipt:not(.hidden)){background:#6a4c98}
+body:has(#personal:not(.hidden)) main,body:has(#confirm:not(.hidden)) main,body:has(#receipt:not(.hidden)) main{
+ position:relative;isolation:isolate;
+ background:
+ radial-gradient(ellipse 64% 38% at 106% 13%,rgba(255,244,212,.94) 0%,rgba(255,204,196,.73) 35%,rgba(255,180,220,.12) 72%,transparent 86%),
+ radial-gradient(ellipse 78% 48% at 108% 42%,rgba(255,160,217,.60),rgba(216,147,234,.26) 60%,transparent 88%),
+ radial-gradient(ellipse 76% 42% at -15% 13%,rgba(68,38,112,.82),rgba(105,64,155,.38) 63%,transparent 88%),
+ linear-gradient(115deg,#55337e 0%,#7750a4 27%,#a06ac2 49%,#d49ad7 72%,#f7c9d7 88%,#ffe7cb 100%);
+}
+body:has(#personal:not(.hidden)) main:before,body:has(#confirm:not(.hidden)) main:before,body:has(#receipt:not(.hidden)) main:before{
+ content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+ background:radial-gradient(ellipse 82% 13% at -10% 15%,rgba(60,32,103,.70),rgba(97,53,145,.35) 57%,transparent 88%),radial-gradient(ellipse 68% 11% at 5% 31%,rgba(89,47,140,.44),transparent 85%);
+}
+body:has(#personal:not(.hidden)) .top,body:has(#confirm:not(.hidden)) .top,body:has(#receipt:not(.hidden)) .top{background:rgba(90,45,129,.11);border-bottom-color:#ffffff55}
+body:has(#personal:not(.hidden)) .brand,body:has(#confirm:not(.hidden)) .brand,body:has(#receipt:not(.hidden)) .brand{display:flex;align-items:center;gap:8px;font-size:20px;color:white;text-shadow:0 2px 9px #4d277b66}
+body:has(#personal:not(.hidden)) .brand:before,body:has(#confirm:not(.hidden)) .brand:before,body:has(#receipt:not(.hidden)) .brand:before{
+ content:'◕';display:grid;place-items:center;flex:none;width:25px;height:25px;margin:0;border-radius:9px;
+ background:linear-gradient(135deg,#f5b5ec 0%,#b878df 43%,#7857bd 75%,#f9c7ac 100%);color:#fff9fc;font-size:18px;line-height:1;
+ box-shadow:0 2px 9px rgba(73,32,112,.23),inset 0 1px 1px rgba(255,255,255,.48);
+}
+body:has(#personal:not(.hidden)) .nav,body:has(#confirm:not(.hidden)) .nav,body:has(#receipt:not(.hidden)) .nav{background:rgba(56,33,91,.93)}
+#personal,#confirm,#receipt{color:#fff}
+#personal h1,#confirm h1,#receipt h1{color:#fff;text-shadow:0 2px 13px #4d2b6b7a}
+#personal p,#confirm p,#receipt p,#personal .note,#confirm .note,#receipt .note{color:#fff4ff}
+#personal .sub,#confirm .sub,#receipt .sub{color:#ffe3fb}
+#personal .panel,#confirm .panel,#receipt .panel,#personal .mw-extra,#receipt .mw-extra,#personal .mw-backup{
+ background:rgba(84,45,127,.30);border:1px solid rgba(255,255,255,.36);color:#fff;box-shadow:0 8px 24px rgba(67,34,108,.12)
+}
+#personal .mw-tiny,#personal .muted,#receipt .muted{color:#fff0ff}
+#personal .tabs button{background:rgba(255,255,255,.16);color:#fff;border-color:#ffffff75}
+#personal .tabs button.active{background:linear-gradient(110deg,#f0a4db,#bd75dd);color:#482b69;border-color:#fff}
+#personal .secondary,#receipt .secondary,#confirm .secondary{background:rgba(255,255,255,.19);color:#fff;border-color:#ffffff91}
+#personal .day{background:rgba(255,255,255,.25);color:#fff}
+#personal .day.today{outline-color:#fff}
+#personal .legend>div{color:#fff}
+#personal .mw-progress{background:rgba(255,255,255,.25)}
+#personal .mw-progress span{background:#ffe3a9}
+#personal .mw-backup-status{color:#fff}
+#personal #chart line{stroke:#ffffff70}
+#personal #chart text{fill:#fff}
+#confirm .primary,#receipt .primary{background:linear-gradient(110deg,#f0a4db,#bd75dd);color:#42235e}
+@media (prefers-reduced-motion:reduce){#personal *,#confirm *,#receipt *{animation:none!important;transition:none!important}}
+
+
+/* V3.8.4 — red text without alert background or border */
+#home .mw-choice-hint{margin:10px 2px 13px;padding:4px 2px;font-size:14px;line-height:1.5;color:#e32236!important;background:transparent!important;border:0!important;border-radius:0;font-weight:800;text-align:center;min-height:19px;text-shadow:none!important}
+#home .mw-choice-hint:empty{display:none}
 </style></head><body><main><header class="top"><div class="brand">moodworld<i>.</i></div><div class="headright"><div class="langbar" aria-label="Language"><button data-lang="fr" type="button">FR</button><button data-lang="en" type="button">EN</button><button data-lang="es" type="button">ES</button></div><div class="sub" style="text-align:right;margin-top:5px">TEST MOBILE</div></div></header>
 <div class="prototype-notice" data-proto="prototypeNotice"></div><section class="page" id="home"><div class="center"><h1>Comment vas-tu<br>aujourd'hui ?</h1><p>Prends un instant pour toi.</p></div><div class="moods">
 <button class="mood" data-mood="1" aria-label="Très mal" aria-pressed="false"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="none" stroke="#C16F7A" stroke-width="2.8"/><path d="M23 25 V28 M41 25 V28" fill="none" stroke="#C16F7A" stroke-width="2.8" stroke-linecap="round"/><path d="M20 42 Q32 33 44 42" fill="none" stroke="#C16F7A" stroke-width="2.8" stroke-linecap="round"/></svg><small>Très mal</small></button><button class="mood" data-mood="2" aria-label="Mal" aria-pressed="false"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="none" stroke="#D19A70" stroke-width="2.8"/><path d="M23 25 V28 M41 25 V28" fill="none" stroke="#D19A70" stroke-width="2.8" stroke-linecap="round"/><path d="M22 41 Q32 37 42 41" fill="none" stroke="#D19A70" stroke-width="2.8" stroke-linecap="round"/></svg><small>Mal</small></button><button class="mood" data-mood="3" aria-label="Moyen" aria-pressed="false"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="none" stroke="#C4AE70" stroke-width="2.8"/><path d="M23 25 V28 M41 25 V28" fill="none" stroke="#C4AE70" stroke-width="2.8" stroke-linecap="round"/><path d="M23 40 L41 40" fill="none" stroke="#C4AE70" stroke-width="2.8" stroke-linecap="round"/></svg><small>Moyen</small></button><button class="mood" data-mood="4" aria-label="Bien" aria-pressed="false"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="none" stroke="#7DAFA0" stroke-width="2.8"/><path d="M23 25 V28 M41 25 V28" fill="none" stroke="#7DAFA0" stroke-width="2.8" stroke-linecap="round"/><path d="M22 39 Q32 46 42 39" fill="none" stroke="#7DAFA0" stroke-width="2.8" stroke-linecap="round"/></svg><small>Bien</small></button><button class="mood" data-mood="5" aria-label="Très bien" aria-pressed="false"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="none" stroke="#4E9D91" stroke-width="2.8"/><path d="M23 25 V28 M41 25 V28" fill="none" stroke="#4E9D91" stroke-width="2.8" stroke-linecap="round"/><path d="M20 38 Q32 49 44 38" fill="none" stroke="#4E9D91" stroke-width="2.8" stroke-linecap="round"/></svg><small>Très bien</small></button>
-</div><div id="countryfield"><label class="participation-label" for="participationcountry" data-proto="countryLabel"></label><select class="country-select" id="participationcountry"><option value="" data-proto="countryPlaceholder"></option><option value="FR" data-proto="france"></option><option value="GB" data-proto="uk"></option><option value="ES" data-proto="spain"></option></select></div><p class="note" id="countrycontext"></p><p class="note" data-proto="localDay"></p><div class="mw-daypicker"><label for="mw-target" id="mw-target-label"></label><select id="mw-target"></select><div class="mw-tiny" id="mw-target-help"></div></div><button class="primary" id="save" disabled>Enregistrer mon humeur</button><div id="message" class="center muted" style="margin-top:14px"></div><div class="center" style="margin-top:24px"><button class="link" data-tab="weather">Voir la météo du monde →</button></div><p class="center muted">Ton historique reste sur cet appareil.</p></section>
+</div><div id="countryfield"><label class="participation-label" for="participationcountry" data-proto="countryLabel"></label><select class="country-select" id="participationcountry"><option value="" data-proto="countryPlaceholder"></option><option value="FR" data-proto="france"></option><option value="GB" data-proto="uk"></option><option value="ES" data-proto="spain"></option></select></div><p class="note" id="countrycontext"></p><p class="note" data-proto="localDay"></p><div class="mw-daypicker"><label for="mw-target" id="mw-target-label"></label><select id="mw-target"></select><div class="mw-tiny" id="mw-target-help"></div></div><p id="mw-choice-hint" class="mw-choice-hint" role="status" aria-live="polite"></p><button class="primary" id="save" disabled>Enregistrer mon humeur</button><div id="message" class="center muted" style="margin-top:14px"></div><div class="center" style="margin-top:24px"><button class="link" data-tab="weather">Voir la météo du monde →</button></div><p class="center muted">Ton historique reste sur cet appareil.</p></section>
 <section class="page hidden" id="confirm"><div class="sub" data-proto="prototypeTag"></div><h1 id="confirmtitle" tabindex="-1" data-proto="confirmTitle"></h1><p data-proto="confirmIntro"></p><div class="panel participation-summary" id="confirmsummary"></div><p class="note" data-proto="localOnly"></p><div id="confirmerror" role="alert" class="note"></div><div class="flow-actions"><button class="primary" id="confirmlocal" data-proto="confirmLocal"></button><button class="secondary" id="cancelconfirm" data-proto="backToMood"></button></div></section>
 <section class="page hidden" id="receipt"><div class="sub" data-proto="prototypeTag"></div><h1 id="receipttitle" tabindex="-1"></h1><div class="panel participation-summary" id="receiptsummary"></div><p data-proto="localOnly"></p><p class="note" data-proto="localDay"></p><div class="mw-extra" id="mw-discovery" aria-live="polite"></div><div class="panel pending"><strong data-proto="pendingTitle"></strong><span data-proto="pendingBody"></span></div><div class="flow-actions"><button class="primary" id="editlocal" data-proto="editMood"></button><button class="secondary" data-tab="personal" data-proto="viewHistory"></button><button class="link" data-tab="weather" data-proto="viewDemo"></button></div></section>
 <section class="page hidden" id="personal"><div class="sub">MON ESPACE</div><h1>Mon évolution</h1><p>Ton histoire émotionnelle, jour après jour.</p><div class="tabs"><button class="active" data-view="calendar">Calendrier</button><button data-view="curve">Courbe</button></div><div class="datehead"><button class="secondary" id="prev">‹</button><strong id="month"></strong><button class="secondary" id="next">›</button></div><div id="calendarpanel"><div class="calendar" id="calendar"></div><div class="panel" id="dayinfo">Touche une journée pour retrouver ton humeur.</div><div id="mw-calendar-action"></div></div><div class="mw-extra" id="mw-weekly"></div><div id="curvepanel" class="hidden"><svg id="chart" class="chart" viewBox="0 0 340 185" aria-label="Courbe émotionnelle"></svg></div><section class="mw-backup" id="mw-backup"><h2 id="mw-backup-title"></h2><p class="note" id="mw-backup-help"></p><div class="mw-backup-actions"><button class="secondary" id="mw-export" type="button"></button><button class="secondary" id="mw-import" type="button"></button></div><input type="file" id="mw-import-file" accept=".json,application/json" class="hidden" aria-label="MoodWorld backup JSON"><div id="mw-backup-status" class="mw-backup-status" role="status"></div></section><div class="legend" id="legend"></div><p class="note">Les jours sans réponse restent neutres. Tes données restent dans ce navigateur.</p></section>
@@ -102,6 +354,17 @@ function drawParticipation(){
  el('countrycontext').textContent=participationCountry?proto('countryContext')+countryName(participationCountry):proto('countryHelp');
  el('save').textContent=proto(history[moodTarget]?'reviewEdit':'reviewMood');
  el('save').disabled=!choice||!(participationCountry||el('participationcountry').value);
+ var hint=el('mw-choice-hint');
+ if(hint){
+  var prompts={
+   fr:{mood:'Choisis ton humeur pour cette journée.',country:'Sélectionne ton pays pour continuer.'},
+   en:{mood:'Choose your mood for this day.',country:'Select your country to continue.'},
+   es:{mood:'Elige tu ánimo para este día.',country:'Selecciona tu país para continuar.'}
+  };
+  var missingCountry=!(participationCountry||el('participationcountry').value);
+  hint.textContent=!choice?prompts[mwLang].mood:(missingCountry?prompts[mwLang].country:'');
+ }
+
  if(pendingDay)participationSummary('confirmsummary',pendingDay,choice);
  if(receiptDay){participationSummary('receiptsummary',receiptDay,history[receiptDay]);el('receipttitle').textContent=proto(receiptModified?'modifiedTitle':'savedTitle')}
 }
