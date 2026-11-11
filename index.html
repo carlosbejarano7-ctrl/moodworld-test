@@ -569,4 +569,13 @@ el('mw-import-file').onchange=function(){var file=this.files&&this.files[0];this
 var previousApplyLanguage=applyLanguage;applyLanguage=function(lang){previousApplyLanguage(lang);drawBackup()};
 
 drawShare();setupLanguage();if(choice)selectMood(choice);
-})();</script></body></html>
+})();</script><script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('./sw.js').catch(function (error) {
+      console.warn('MoodWorld: service worker non disponible', error);
+    });
+  });
+}
+</script>
+</body></html>
